@@ -27,6 +27,7 @@
 
 /* Carousel formatting
 -------------------------------------------------- */
+
 .carousel-inner > .item > img {
     margin: 0 auto;
 }
@@ -38,10 +39,10 @@
 
 .carousel .item {
     width: 100%; /*slider width*/
-    max-height: 400px; /*slider height*/
+    max-height: 450px; /*slider height*/
 }
 .carousel .item img {
-    width: 100%; /*img width*/
+    width: 65%; /*img width*/
 }
 
 @media (max-width: 767px) {
