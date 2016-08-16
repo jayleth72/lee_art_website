@@ -28,7 +28,16 @@
 /* Carousel formatting
 -------------------------------------------------- */
 
+/* Please note we are handling the size of carousel in the
+   Screen size modifications section of this form */
+
 .carousel-inner > .item > img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-inner > .item > img {
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -42,7 +51,7 @@
     max-height: 450px; /*slider height*/
 }
 .carousel .item img {
-    width: 65%; /*img width*/
+    width: 80%; /*img width*/
 }
 
 @media (max-width: 767px) {
@@ -124,8 +133,12 @@ body h1 {
 @media only screen and (min-width:1px) and (max-width: 407px)  {
  
 body {
-        margin-bottom: 425px;
+        margin-bottom: 350px;
     }
+
+#carousel-container {
+    width: 100%;
+}
 
  #footer {
         height: 450x; 
@@ -138,6 +151,10 @@ body {
         margin-bottom: 375px;
  }
 
+#carousel-container {
+    width: 80%;
+}
+
  #footer {
         height: 350px; 
     }
@@ -145,6 +162,10 @@ body {
 @media only screen and (min-width:769px)   {
 body {
         margin-bottom: 225px;
+}
+
+#carousel-container {
+    width: 50%;
 }
 
 #footer {
