@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Surfers in the eye - Lee's Art</title>
+        <title>Virtual Gallery - Lee's Art</title>
 
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,8 +20,9 @@
 
     </head>
     <body>
-    
-<!-- ====================================================== HEADER ====================================================== -->
+
+
+  <!-- ====================================================== HEADER ====================================================== --> 
 
     <header class='navbar navbar-default navbar-static-top'>
         <nav class='container' role='navigation'>
@@ -43,7 +44,7 @@
                     <a href='/about' data-target='#' class='dropdown-toggle' data-toggle='dropdown'>About <span class='caret'></span></a>
                     <ul class='dropdown-menu' role='menu'>
                         <li><a href='my-story.html'>My Story</a></li>
-                                           
+                                     
                         <!-- TODO about blog page later -->    
                         <!-- <li class='divider'></li>
                         <li><a href='blog.html'>Lee's Blog</a></li>-->
@@ -55,47 +56,55 @@
                 </li> 
                 <li class='dropdown active'>     
                     <a href='/gallery' data-target='#' class='dropdown-toggle' data-toggle='dropdown'>Gallery <span class='caret'></span></a>        
-                    <ul class='dropdown-menu' role='menu'>
-                        
-                        <li><a href='virtual-gallery.html'>Virtual Gallery</a></li>
-                        <li><a href='picture1.html'>Picture1</a></li>
-                        <li class="active"><a href='picture2.html'>Picture2</a></li>
-                        <li><a href='picture3.html'>Picture3</a></li>
-                        <li><a href='picture4.html'>Picture4</a></li>
-                        
-                        </ul>
+                     <ul class='dropdown-menu' role='menu' id="gallery-dropdown">
+                   
+                        <!-- dopdown items auto-generated via dropdowns.js -->
+
+                     </ul>
                 </li><!-- dropdown for gallery -->
-                <li ><a href='contact-me.html'>Contact Lee</a></li>              
+                <li ><a href='contact-me.html'>Contact Lee</a></li>            
             </ul>
         </nav>
         </header>
+
+
+<!-- ====================================================== PAGE CONTENT ====================================================== -->        
             
-
-<!-- ====================================================== PAGE CONTENT ====================================================== -->   
-
         <!-- Page Content -->
         <div class="container">
 
-            <div class="row">
+            <div class="row" id="thumbnail-gallery">
 
                 <div class="col-lg-12">
-                    <h1 class="page-header">The Dream Surfer</h1>
+                    <h1 class="page-header">Lee's Art Shop</h1>
                 </div>
 
-                <div class="col-lg-12">
-                     <img class="img-responsive picture-gallery" src="images/surfers-in-the-eye.jpg" alt="painting of the surfers in the eye">
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="picture1.html">
+                        <img class="img-responsive" src="images/dream-surf.jpg" alt="paiting of the dream surfer">
+                    </a>
                 </div>
-
-                <div class="col-lg-12">
-                    <h2>Info</h2>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="picture2.html">
+                        <img class="img-responsive" src="images/surfers-in-the-eye.jpg" alt="painting of the surfers in the eye">
+                    </a>
                 </div>
-                               
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="picture3.html">
+                        <img class="img-responsive" src="images/wave-in-the-hair.jpg" alt="painting of surfer in the hair">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="picture4.html">
+                        <img class="img-responsive" src="images/wave-in-the-hand.jpg" alt="painting of surfer in the hand">
+                    </a>
+                </div>
+                
             </div><!-- row -->
         </div><!-- container -->
 
 
-
- <!-- ====================================================== FOOTER ====================================================== --> 
+<!-- ====================================================== FOOTER ====================================================== -->
 
         <div id="footer">
             <div class='container'>
@@ -112,7 +121,7 @@
                                 <li class="active"><a href='index.html'>Home</a></li>
                                 <li><a href='my-story.html'>Lee's Story</a></li>
                                 <li><a href='virtual-gallery.html'>Gallery</a></li>
-                                <li><a href='contact-me.html'>Contact Lee</a></li>    
+                                <li><a href='contact-me.html'>Contact Lee</a></li>       
                             </ul>
                     </div>
 
@@ -137,10 +146,13 @@
                     </div>
                 </div>
             </div>
-        </div>     
+        </div>
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/dropdowns.js"></script>
+        
     </body>
 </html>

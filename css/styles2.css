@@ -48,10 +48,11 @@
 
 .carousel .item {
     width: 100%; /*slider width*/
-    max-height: 450px; /*slider height*/
+    /*max-height: 600px; /*slider height*/
+    height: 100%;
 }
 .carousel .item img {
-    width: 80%; /*img width*/
+    width: 100%; /*img width*/
 }
 
 @media (max-width: 767px) {
@@ -98,7 +99,7 @@ body h1 {
 -------------------------------------------------- */
 .picture-gallery {
    border: solid 10px #fff;
-   border-radius: 10px
+   /*border-radius: 10px*/
 }
 
 
@@ -165,7 +166,7 @@ body {
 }
 
 #carousel-container {
-    width: 50%;
+    width: 60%;
 }
 
 #footer {
